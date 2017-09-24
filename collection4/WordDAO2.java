@@ -13,8 +13,8 @@ public class WordDAO2 {
 	ResultSet rs = null;
 
 	static String URL="jdbc:mysql://localhost/testdb?useUnicode=true&characterEncoding=utf8";
-	static String USER="axizuser";
-	static String PW="axiz";
+	static String USER="root";
+	static String PW="";
 
 	public int registWords(List<Word> words) {
 		int result = 0;
