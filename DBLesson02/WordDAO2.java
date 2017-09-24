@@ -13,15 +13,15 @@ public class WordDAO2 {
 	PreparedStatement st = null;
 	ResultSet rs = null;
 
-	static String URL="jdbc:postgresql:axizdb";
-	static String USER="axizuser";
-	static String PW="axiz";
+	static String URL="jdbc:mysql://localhost/testdb?useUnicode=true&characterEncoding=utf8";
+	static String USER="root";
+	static String PW="";
 
 	public int registWords(List<Word> words) {
 		int result = 0;
 		try {
 			String SQL="INSERT INTO dictionary VALUES(?,?)";
-			Class.forName("org.postgresql.Driver");
+			Class.forName("jdbc:mysql://localhost/testdb?useUnicode=true&characterEncoding=utf8");
 			con = DriverManager.getConnection(URL,USER,PW);
 
 			for(Word tmp : words){
