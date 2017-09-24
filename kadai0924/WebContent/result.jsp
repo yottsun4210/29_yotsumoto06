@@ -11,5 +11,6 @@
 <body>
 <p><%= count %>件登録しました。</p>
 <p>登録件数は<%= wordNum %>件です。</p>
+<a href="#TOP">トップへ戻る</a>
 </body>
 </html>
