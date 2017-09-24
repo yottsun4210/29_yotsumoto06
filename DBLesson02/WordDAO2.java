@@ -21,7 +21,7 @@ public class WordDAO2 {
 		int result = 0;
 		try {
 			String SQL="INSERT INTO dictionary VALUES(?,?)";
-			Class.forName("jdbc:mysql://localhost/testdb?useUnicode=true&characterEncoding=utf8");
+			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(URL,USER,PW);
 
 			for(Word tmp : words){
